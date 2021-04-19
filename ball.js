@@ -28,14 +28,14 @@ var constantMoving = (ball, i, velocity = 5) => {
         return rgb;
     }
 
-    var positionX = 0;
+    var positionX = Math.floor(window.innerWidth*(Math.random()));
     var positionY = 0;
     var reverseX = false;
     var reverseY = false;
 
-    var red = parseInt(arrayRGB(balls[i])[0]);
-    var green = parseInt(arrayRGB(balls[i])[1]);;
-    var blue = parseInt(arrayRGB(balls[i])[2]);;
+    var red = parseInt(arrayRGB(balls[0])[0]);
+    var green = parseInt(arrayRGB(balls[0])[1]);;
+    var blue = parseInt(arrayRGB(balls[0])[2]);;
     var redReverse = false;
     var greenReverse = false;
     var blueReverse = false;
